@@ -19,59 +19,104 @@
       <font_family>arial, helvetica, sans-serif</font_family>
       <font_size>8pt</font_size>
       <font_weight>bold</font_weight>
-      <html_code><![CDATA[<style type="text/css">
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #ffffff;
-        justify-content: left;
-    }
-
-    .flex-container>div {
-        background-color: #DEE7F8;
-        width: 200px;
-        margin: 20px;
-        line-height: 20px;
-        border-radius: 15px;
-        align-content: left;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: auto;
-        padding: 0;
-        position: relative;
-        display: inline;
-    }
-    h3 {
-        text-align: center;
-    }
-
-    li {
-        font-size: 9pt;
-        cursor: pointer;
-    }
-li:hover{
-  background-color: #c3ccde;
+      <html_code>
+        <![CDATA[<style type="text/css">
+* {
+    font-family: 'meiryo ui';
 }
-.icon{
-height: 20px;
-width: 20px;
-display: inline;
-padding: 5px;
-vertical-align: middle;
+
+html {
+    font-size: 1em;
 }
-.new{
-height: 20px;
-width: 20px;
-padding: 5px;
-display: inline;
-vertical-align:
-middle;
-display: none;
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
 }
-li:hover .new{
-display: inline;
+
+.flex-container>div {
+    background-color: #deeff8;
+    width: 230px;
+    margin: 15px;
+    line-height: 20px;
+    border-radius: 10px;
+    align-content: left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    display: inline;
+}
+
+#test li {
+    font-size: 10pt;
+}
+
+li {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li:hover {
+    background-color: #c3ccde;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    display: inline;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.new {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    display: inline;
+    vertical-align:
+        middle;
+    display: none;
+}
+
+li:hover .new {
+    display: inline;
+}
+
+#logo {
+    margin-top: 10px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+#info {
+    font-size: 10pt;
+    margin-left: 20px;
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+}
+#info p {
+    font-size: 1em;
 }
 </style>
 <script type="text/javascript">
@@ -115,8 +160,13 @@ display: inline;
         window.event.stopPropagation();
     }
 </script>
-<img src='../images/aras-innovator.svg' id="logo"
-    style="margin-top: 10px; height: 141px; width: 500px; margin-left: auto; margin-right: auto;" />
+<img src='../images/aras-innovator.svg' id="logo" />
+    <div id="info">
+        <h1>お知らせ</h1>
+        <p>
+            ヘッドラインニュース的なもの
+        </p>
+    </div>
 
 <div id="test" class="flex-container" />]]></html_code>
       <is_disabled>0</is_disabled>
